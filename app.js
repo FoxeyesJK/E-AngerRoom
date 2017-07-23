@@ -12,7 +12,8 @@ var express     = require("express"),
     //seedDB      = require("./seeds")
 
 
-mongoose.connect(process.env.DATABASEURL);
+var url = process.env.DATABASEURL || "mongodb://localhost/e_anger_room"
+mongoose.connect(url);
 //mongoose.connect("mongodb://localhost/e_anger_room");
 //mongoose.connect("mongodb://foxeyes:kwonj1jw@ds031541.mlab.com:31541/e-angerroom");
 
