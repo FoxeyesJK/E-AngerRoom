@@ -11,7 +11,8 @@ var express     = require("express"),
     moment      = require("moment")
     //seedDB      = require("./seeds")
 
-mongoose.connect("mongodb://localhost/e_anger_room");
+//mongoose.connect("mongodb://localhost/e_anger_room");
+mongoose.connect("mongodb://foxeyes92:kwonj1jw@ds031541.mlab.com:31541/e-angerroom");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
