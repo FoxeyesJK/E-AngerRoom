@@ -1,0 +1,111 @@
+<% include ./partials/header %> 
+
+ <div class="flash_container">
+    <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+        </div>
+<p class=".triangle-isosceles"Content</p>
+
+<div class="typing-img">
+  <script>
+  var random = Math.floor((Math.random() * 7) + 1);  
+  var img;
+  switch(random) { 
+    case 1: 
+        img = "https://media3.giphy.com/media/vUbMFgbqppFNS/giphy.gif";
+        break; 
+    case 2: 
+        img = "https://media0.giphy.com/media/1g8XW9Q13ms6Y/giphy.gif";
+        break; 
+    case 3:
+        img = "https://media3.giphy.com/media/G81AuyWhiCSEE/giphy.gif";
+        break;
+    case 4:
+        img = "https://media4.giphy.com/media/3uyIgVxP1qAjS/giphy.gif";
+        break;
+    case 5:
+        img = "https://media0.giphy.com/media/b11dPGPyUrd2E/giphy.gif";
+        break;
+    case 6:
+        img = "https://media2.giphy.com/media/l4FGBNCuOz1wNTnva/giphy.gif";
+        break;
+    default:
+        img = "https://media1.giphy.com/media/11vYR9XB4yrf9e/giphy.gif";
+}
+var x = document.createElement("IMG");
+x.setAttribute("src", img);
+x.setAttribute('height', '300px');
+x.setAttribute('width', '400px');
+document.body.appendChild(x);
+//document.getElementById('src').style.width = '200px';
+</script>
+</div>
+        
+<div class="email_container">
+  <h4 class="new-msg">New Message</h4>
+  <form action="/profile" method="POST">
+    
+    <div class="form-group">
+       <input class="form-control" type="text" name="recipient" placeholder="To">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="text" name="subject" placeholder="Subject">
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" name="contents" placeholder="Write something." style="height:200px"></textarea>
+    </div>
+    <div class="form-group">
+    </div>
+    <button class="send-btn btn-danger" onclick="sendbtn()">Send</button>
+  <!--<input type="text" name="newfriends" placeholder="name">
+  <a id="regbtn" class="btn btn-lg btn-default" href="/profile">Sign Up</a>
+-->
+  </form>
+</div>
+    <br>
+    <p id="confirm"></p>
+ 
+<img class="madpi" src="http://rs50.pbsrc.com/albums/f335/malu67/pokemon%20raichu%20pikachu%20pichu%20animated_zpsr8gmwbwt.gif?w=280&h=210&fit=crop">
+
+<% emails.forEach(function(email){ %>
+      <div id="eachemail">
+      <div class="del">
+        <form id="delete-form" action="/profile/<%=email._id %>?_method=DELETE" method="POST">
+      <button class="delbtn" type="submit"><i class="material-icons">delete</i></button>
+      </form>
+      </div>
+      <div class="rec">To: <%= email.recipient %></div>
+      <div class="sub"><%= email.subject %></div>
+      <div class="cont"><%= email.contents %></div>
+      <div class="tod"><div class="tocolor"><%= email.today %></div></div>
+      </div>
+    
+<% }); %>
+
+
+        
+
+
+<script>
+function sendbtn() {
+    var txt;
+    if (confirm("This email sounds angry. Are you sure you want to send it? " + '\n' + "It may mean the end of your relationship...") == true) {
+        alert("Feel better?" + '\n' + "You didn't ruin your realtionship though. " + '\n' + "Try again!");
+    } else {
+        alert("Don't worry, the email will not be sent! " + '\n' + "Try sending it!");
+    }
+}
+</script>
+
+<br><br><br>
+<% include ./partials/footer %> 
+        
+        

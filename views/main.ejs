@@ -1,0 +1,62 @@
+<% include ./partials/header %> 
+
+ <div class="mainflash_container">
+    <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+        </div>
+
+<div class="mainbody">
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/7a/1c/b2/7a1cb2039c84ad740c575c128c905509--cute-pikachu-cute-pokemon.jpg">
+    
+    <div class="belowimg">
+    <h5>Do not let you stressed!</h5>
+    <h5>Boss, co-workers, friends, boyfriend, girlfriend, and whoever make you stressed, shout it out to the world! but your target won't know!!</h5>
+    </div>
+    
+    <div class="twobtn">
+        <% if(!currentUser){ %>
+            <a id="signupbtn" class="btn btn-lg btn-default" href="/register">Sign Up</a>
+            <a id="Loginbtn" class="btn btn-lg btn-default" href="/login">Log in</a>
+                    <% } else { %>
+                        <a id="composebtn" class="btn btn-lg btn-danger" href="/profile">Compose Email</a>
+                    <% } %>
+    </div>
+    
+    <div class="line"></div>
+    
+    <div id="about" class="six columns">
+    <h2>What is this all About?</h2>
+    </div>
+    <div id="about_p" class="six columns">
+    <p>We easily get stressed to maintain the good relationship with your boss, co-workers, couples, friends and families etc. Don’t be stressed! </p>
+    <p>Although we get stressed from those enemies, we usually don’t do anything to keep your good relationship with them.</p>
+    <p>I am pretty sure, once in a while, you might have thought of sending the anger email to them and say everything that you want to say.</p>
+    <p>Here is E-AngerRoom! Don’t worry about turning into bad relationship with those bitches and send them anger email. Do what you got to say! </p>
+    <p>Please watch the video below to start!</p>
+    </div>
+    
+    <div class="line"></div>
+    
+    <div class="youtube">
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/kgqep0h1tuo" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div class="first-try"> 
+     <% if(!currentUser){ %>
+            <a id="trybtn" class="btn btn-lg btn-danger" href="/register">Now, try E-AngerRoom!</a>
+                    <% } else { %>
+                        <a id="composebtn" class="btn btn-lg btn-danger" href="/profile">Compose Email</a>
+                    <% } %>
+    </div>
+    <div class="line"></div>
+    </div>
+<% include ./partials/footer %> 
+

@@ -1,0 +1,261 @@
+body {
+    background-color: #f9f9f9;
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: #222;
+}
+
+.navbar{
+    margin-bottom:0;
+}
+.mainbody {
+    background-color: #ffffff;
+}
+
+.flash_container {
+    padding: 30px 200px;
+    text-align: center;
+}
+
+.mainflash_container {
+    background-color: #ffffff;
+    padding: 30px 200px;
+    text-align: center;
+}
+/*Login CSS*/
+
+.login_container {
+    margin: 50px auto;
+    width: 500px;
+    padding: 10px 0px;
+    border: 1px solid #ccc;
+    border-bottom: 50px solid #e7e7e7;
+    box-shadow: 0px 2px 0px #cccccc;
+}
+
+.login_head, .login_auth {
+    text-align: center;
+}
+
+.login_user, .login_pass {
+    padding-left: 15px;
+    font-size:11pt;
+    height: 40px;
+    width: 400px;
+    margin-top: 15px;
+    border: 1px solid #e7e7e7;
+}
+
+.login_btn {
+    background-color: #333333;
+    color: #ffffff;
+    width: 400px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+/*navbar CSS*/
+.navbar {
+    color: #FFFFFF;
+    background-color: #ffffff;
+}
+
+.navbar img, .mainbody img{
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+h5 {
+    font-family:"Helvetica Neue";
+    text-align: center;
+}
+
+.belowimg {
+    margin-top: 40px;
+}
+
+.twobtn {
+    margin-top: 20px;
+    margin-left: 40%;   
+}
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+
+#signupbtn {
+    margin-left:-15px;
+    padding: 12px 37px;
+    background-color: #FFDC00;
+    color: #ffffff;
+    border: none;
+}
+
+#Loginbtn {
+    padding: 12px 41px;
+    background-color: #ffffff;
+    color: black;
+}
+
+#trybtn, #composebtn {
+    padding: 12px 60px;
+    color: #ffffff;
+    border: none;
+}
+
+.mincha {
+    color: #A9A9A9;
+}
+
+.center {
+    text-align: center; 
+    display: block;
+}
+
+
+
+#regbtn {
+    padding: 12px 120px;
+}
+
+#regbtn:hover {
+    background-color: #ffffff;
+    border-color: grey;
+}
+
+.line {
+    margin: 0 auto;
+    width: 80%;
+    margin: 100px;
+    border-bottom: 1px solid #FFDC00;
+}
+
+#about {
+    line-height: 1.3;
+    letter-spacing: -.1rem;
+    float: left;
+    color: #4f4f4f;
+    height: 700px;
+    margin-left: 10%;
+    margin-right: 16%;
+
+}
+
+#about_p {
+    width: 90%;
+    color: #4f4f4f;
+}
+
+#about_p p {
+    margin: 20px;
+    font-size: 120%;
+}
+
+/*new email css*/
+.email_container {
+  
+    margin: 50px auto;
+    width: 80%;
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 0px #cccccc;
+}
+
+.send-btn {
+    width: 100px;
+    height: 40px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+#to, #subject{
+    display: block;
+    margin-bottom: 4px;
+}
+
+#profile_table{
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+#eachemail {
+    background-color: #ffffff;
+    border-top: 1px solid #FFFF00;
+    padding-bottom: 10px;
+    display: block;
+    margin-left:50px;
+    width: 43%;
+    margin-top: 40px;
+    float: left;
+}
+
+.del {
+    float: right;
+    text-align: right;
+    padding: 0px 10px 0px 10px;
+}
+
+.delbtn {
+    color:#e5e5e5;
+    border: none;
+    background-color: #ffffff;
+}
+
+.rec {
+    text-align: left;
+    padding: 15px 0px 0px 30px;
+}
+.tocolor {
+    padding-right: 4px;
+    color: #e5e5e5;
+}
+
+.tod {
+    text-align: right;
+    padding: 4px 15px 0px 0px;
+}
+
+.sub {
+    text-align: center;
+    font-weight: bold;
+    padding: 7px 0px 0px 0px;
+}
+
+.cont {
+    padding: 4px 10px 0px 30px;
+}
+
+/*YOUTUBE*/
+.youtube {
+     text-align: center;
+}
+
+.first-try{
+    margin-top: 50px;
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+.madpi {
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+/* Bubble with an isoceles triangle
+------------------------------------------ */
+
+

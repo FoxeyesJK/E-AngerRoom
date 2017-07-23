@@ -1,0 +1,28 @@
+<% include ./partials/header %> 
+
+ <div class="flash_container">
+    <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+        </div>
+
+<form action="/register" method="post">
+    <div class="login_container">
+    <h3 class="login_head">Sign Up to E-AngerRoom</h3>
+    <div class="login_auth">
+    <input class="login_user" type="email" name="username" placeholder="Username or email"><br/>
+    <input class="login_pass" pattern=".{6,}" required title="6 characters minimum" type="password" name="password" placeholder="Password"><br/>
+    <p class="mincha"> (6 characters minimum) </p>
+    <button class="login_btn">Sign Up</button>
+    <!--<a id="regbtn" class="btn btn-lg btn-default" href="/">Sign Up</a>-->
+    </div
+</form>
+
+<% include ./partials/footer %> 
